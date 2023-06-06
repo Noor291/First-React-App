@@ -1,7 +1,7 @@
 import React from "react";
 
 const BaseHoc=(Component)=>
-({ ...props})=>{
+({...props})=>{
     return(
     <div>
         <h1>This is Navbar</h1>
