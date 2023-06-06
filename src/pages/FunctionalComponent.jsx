@@ -1,4 +1,6 @@
 import React,{useState} from "react";
+import '../App.css'
+import BaseHoc from "../components/BaseHoc";
 
 //function FunctionalComponent()
 
@@ -8,7 +10,8 @@ const FunctionalComponent=(/*props*/{name,age,branch,setName})=>{
     const[nameData,setnameData]=useState();
 
     return(
-        <div>
+        <div className="App-header">
+            <h1>Functional Component</h1>
             <p>This is a Functional Component</p>
             <button onClick={()=>setCount(count+1)}>
                 Click me to add 1 
@@ -26,4 +29,4 @@ const FunctionalComponent=(/*props*/{name,age,branch,setName})=>{
     )
 }
 
-export default FunctionalComponent;
+export default BaseHoc(FunctionalComponent);
